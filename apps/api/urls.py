@@ -19,14 +19,8 @@ urlpatterns = [
 
 router = DefaultRouter()
 router.register('hotel', HotelViewSet, basename='hotel')
-
-router = DefaultRouter()
 router.register('room', RoomViewSet, basename='room')
-
-router = DefaultRouter()
 router.register('booking', BookingViewSet, basename='booking')
-
-router = DefaultRouter()
 router.register('guest', GuestViewSet, basename='guest')
 
-urlpatterns += router.urls      
+urlpatterns += router.urls                      
